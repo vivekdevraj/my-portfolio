@@ -1,0 +1,448 @@
+/* ===== PREMIUM PORTFOLIO DESIGN ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #080b1d, #17102f, #0b1730);
+    color: #f4f2ff;
+    line-height: 1.7;
+}
+
+/* Navigation */
+nav, .navbar {
+    background: rgba(10, 12, 32, 0.92);
+    padding: 18px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+nav a, .navbar a {
+    color: #ddd6fe;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover, .navbar a:hover {
+    color: #60a5fa;
+}
+
+/* Home / Hero */
+.hero {
+    min-height: 85vh;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at top, rgba(124, 58, 237, 0.25), transparent 55%);
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.welcome {
+    color: #60a5fa;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 58px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    color: #c4c2dc;
+    font-size: 18px;
+}
+
+/* Profile Photo */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #a78bfa;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.45);
+}
+
+/* All Sections */
+.section {
+    max-width: 1050px;
+    margin: 55px auto;
+    padding: 35px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+}
+
+.section h1,
+.section h2 {
+    color: #c4b5fd;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Information Cards */
+.info-card {
+    background: rgba(139, 92, 246, 0.09);
+    border: 1px solid rgba(167, 139, 250, 0.25);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.info-card p {
+    margin: 10px 0;
+    color: #e5e1f7;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+th {
+    background: #5836a8;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    background: rgba(255, 255, 255, 0.055);
+    color: #e9e5ff;
+    padding: 13px;
+    text-align: center;
+    border: 1px solid rgba(167, 139, 250, 0.15);
+}
+
+tr:hover td {
+    background: rgba(96, 165, 250, 0.12);
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 28px;
+}
+
+li {
+    color: #ddd6fe;
+    margin: 10px 0;
+}
+
+li::marker {
+    color: #60a5fa;
+}
+
+/* Links */
+a {
+    color: #93c5fd;
+}
+
+a:hover {
+    color: #c4b5fd;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(96, 80, 220, 0.3);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(96, 80, 220, 0.5);
+}
+
+/* Video */
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    min-height: 300px;
+    margin: 25px auto;
+    border: 2px solid #8b5cf6;
+    border-radius: 15px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background: rgba(5, 7, 22, 0.85);
+    color: #aaa5c5;
+    border-top: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+/* Smooth Hover Effect */
+.info-card,
+.section {
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    border-color: #8b5cf6;
+}
+
+/* Mobile Friendly */
+@media (max-width: 650px) {
+    nav, .navbar {
+        gap: 12px;
+        padding: 14px 10px;
+    }
+
+    nav a, .navbar a {
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 22px 16px;
+        margin: 30px auto;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 9px 5px;
+    }
+
+    iframe {
+        min-height: 220px;
+    }
+}
+     /* FIX: Navigation links in one horizontal row */
+
+nav, .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul, .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li, .navbar ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a, .navbar ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+  
+   /* ===== LORD KRISHNA SECTION ===== */
+
+.krishna-section {
+    text-align: center;
+    background: linear-gradient(135deg, #17102f, #25134b);
+    border: 1px solid #a78bfa;
+    border-radius: 22px;
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.25);
+    padding: 35px;
+}
+
+.krishna-section h1 {
+    color: #f5d58a;
+    margin-bottom: 20px;
+}
+
+.krishna-intro {
+    color: #ddd6fe;
+    margin-bottom: 25px;
+}
+
+.krishna-img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 18px;
+    border: 3px solid #c4a35a;
+    margin: 15px auto 25px;
+    display: block;
+    box-shadow: 0 0 25px rgba(196, 163, 90, 0.3);
+}
+
+.krishna-section h2 {
+    color: #f5d58a;
+    margin: 20px 0;
+}
+
+.sanskrit {
+    color: #f5d58a;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+.krishna-meaning {
+    color: #e5e1f7;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.krishna-ending {
+    color: #f5d58a;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+  
+   /* ===== JEE MAIN ACHIEVEMENT SECTION ===== */
+
+.achievement-section {
+    text-align: center;
+    padding: 35px;
+}
+
+.achievement-section h1 {
+    color: #f5d58a;
+    margin-bottom: 25px;
+}
+
+.achievement-card {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 35px 25px;
+    background: linear-gradient(145deg, #211638, #35204f);
+    border: 2px solid #d4af37;
+    border-radius: 22px;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.trophy-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.achievement-card h2 {
+    color: #f5d58a;
+    font-size: 25px;
+}
+
+.achievement-card h3 {
+    color: #ffffff;
+    font-size: 48px;
+    margin: 15px 0 0;
+}
+
+.percentile {
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.achievement-name {
+    color: #f5d58a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+   /* ===== SKILLS AND HOBBIES TWO-COLUMN LAYOUT ===== */
+
+.skills-hobbies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.skills-card,
+.hobbies-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 25px;
+    border: 1px solid rgba(167, 139, 250, 0.4);
+    border-radius: 18px;
+    text-align: left;
+}
+
+.skills-card h2,
+.hobbies-card h2 {
+    text-align: center;
+    color: #f5d58a;
+    margin-bottom: 20px;
+}
+
+.skills-card li,
+.hobbies-card li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    .skills-hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+}
